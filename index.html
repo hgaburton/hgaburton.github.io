@@ -3,81 +3,24 @@
   <title>Hugh Burton</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <style>
-  /* Container holding the image and the text */
-  .container {
-    position: relative;
-  }
 
-  /* Bottom right text */
-  .overlay {
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-30%, -50%);
-    font-size: 30px;
-    font-weight: 900;
-    font-family: "Lucida Sans Bold", sans-serif;
-    color: #055561;
-  }
-
-
-  .header {
-    text-align: center;
-    margin: 30px 0px;
-    padding: 0.1px 50px;
-    margin-bottom: 0px;
-    background-color: #07889b;
-    color: white; 
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 100px;
-    horizontal-align: middle;
-    margin: 0 auto;
-    max-width: 80%;
-  }
-
-  .column {
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 6px;
-  }
-
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
   </style>
 </head>
 
 <body>
     <!-- HEADER -->
     <div class="header">
-        <h1 style="margin-bottom:0px;">
+        <h1>
             Hugh  Burton
         </h1>
-        <h2 style="font-size:170%; margin-top:7px; margin-bottom: 20px">
+        <h2>
             <a href="https://arxiv.org/a/burton_h_1.html" style="color: white;">arxiv</a>
             -
             <a href="https://twitter.com/HughGABurton" style="color: white;">twitter</a>
             -
             <a href="https://orcid.org/0000-0002-1342-2056" style="color: white;">orcid</a> 
+            -
+            <a href="https://www.researchgate.net/profile/Hugh_Burton" style="color: white;">research gate</a>
         </h2>
     </div>
     <!--        -->
@@ -85,7 +28,7 @@
     <!-- SHORT BIO -->
     <div class="row">
         <p style="line-height: 1.5; font-size: 15px">
-            <img src="Bergen.jpg" width=auto height="300px" style="margin: 5px 50px 5px 20px; float: left;"> 
+            <img src="Bergen.jpg" width=auto height="300px" style="margin: 5px 20px 0px 20px; float: left;"> 
 
             <br><br><br>
             <b>My goal is to develop theoretical and computational methods to accurately predict electronic properties in molecules with competing electronic configurations.</b>
@@ -128,17 +71,19 @@
             </div>
         </div>
     </div>
+
+    <!-- footer -->
     <div class="footer" style="line-height: 0.7">
-        <p><b>
-            <a href="./index.html" style="color: white;">Home</a> 
-            &nbsp;|&nbsp;
-            About Me 
-            &nbsp;|&nbsp; 
-            Research 
-            &nbsp;|&nbsp; 
-            Publications
-        </b></p>
-        <p>Hugh Burton &copy; 2020</p>
+      <p><b>
+        <a href="./index.html" style="color: white;">Home</a> 
+        &nbsp;|&nbsp;
+        About Me 
+        &nbsp;|&nbsp; 
+        Research 
+        &nbsp;|&nbsp; 
+        Publications
+      </b></p>
+      <p>Hugh Burton &copy; 2020</p>
     </div>
 
 </body>
