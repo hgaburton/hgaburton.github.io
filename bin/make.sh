@@ -1,5 +1,5 @@
 root=$(pwd)
-build=$(pwd)/build
+build=$(pwd) #/build
 bin=$root/bin
 
 cd src
