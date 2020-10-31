@@ -31,7 +31,7 @@ p {
 .container {
    display: grid;
    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
-   grid-template-rows: 100px 300px auto auto 100px;
+   grid-template-rows: 100px 340px auto auto 100px;
    grid-column-gap: 10px;
    grid-row-gap: 20px;
    max-width: 1300px;
@@ -83,8 +83,8 @@ p {
 /* MINI ME SIDEBAR */
 .minime {
     grid-column: 1 / 2;
-    grid-row-start: 2 / 3;
-    min-height: 300px;
+    grid-row: 2 / 3;
+    min-height: 340px;
     align-items: center;
 }
 
@@ -93,7 +93,7 @@ p {
     height: auto;
     margin: 1px 1px 1px 1px;
     float; left;
-    border: 2px solid #07889b;
+    border: 3px solid #07889b;
 }
 
 .sidebar {
