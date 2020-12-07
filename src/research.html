@@ -14,7 +14,163 @@
 
 <div class="grid main"> 
     <h2>Research</h2>
-    <p><i>More information coming soon!</i></p>
+    <h3>Major Themes</h3>
+    <ul>
+        <a href="#ComplexQC"><li><b>Quantum Chemistry in the Complex Plane</b></li></a>
+        <a href="#ESLandscapes"><li><b>Energy Landscapes for Electronic Structure</b></li></a>
+        <a href="#NOCI"><li><b>Nonorthogonal Multireference Energy Surfaces</b></li></a>
+        <a href="#HoloHF"><li><b>Holomorphic Hartree&ndash;Fock Theory</b></li></a>
+    </ul>
+
+    <!-- Quantum Chemistry in the Complex Plane -->
+    <h3 style="padding-top:10px;" id="ComplexQC">Quantum Chemistry in the Complex Plane</h3>
+    <p>
+       <b>
+           Quantum chemistry is usually considered with mathematically real energies. 
+           This leads to the idea that a molecule's energy
+           can only take particular &ldquo;discrete&rdquo; energy levels.
+           We explore the consequences of allowing the energy to be complex-valued, 
+           and find that the discrete energy levels become unified as one continuous 
+           mathematical structure. 
+           
+       </b>
+       <br>
+       <p style="text-align:center">
+       <img src="graphics/h2_riemann.pdf" style="width:auto;height:320px;padding-left:30px;padding-right:30px;">
+       <img src="graphics/pt_sym.pdf" style="width:auto;height:320px;padding-left:30px;padding-right:30px">
+       </p>
+       <p>
+
+       In this work, we present an entirely novel approach for exploring excited stationary states across quantum chemistry 
+       that exploits the properties of non-Hermitian Hamiltonians. 
+       Our key idea centres on performing complex analytic continuations of conventional methods that reveal rich and diverse 
+       behaviours in the complex plane. 
+       For example, by analytically continuing the electron-electron interaction in holomorphic Hartree--Fock theory,[1--3] 
+       we expose a hidden connectivity of multiple solutions across the complex plane.[4]
+       In doing so, we reveal that Coulson--Fischer points (where real Hartree--Fock solutions coalesce) behave more generally 
+       as non-Hermitian "exceptional point" degeneracies.
+       Finally, we demonstrate how one can exploit this complex topology to naturally evolve a ground-state wave function into 
+       an excited-state wave function using a well-defined complex adiabatic connection.
+       <br><br>
+
+       <b>Learn More:</b>
+       <br>
+       <ul reversed>
+          <li>
+            <a href="https://doi.org/10.1021/acs.jctc.9b00289">
+                Parity-Time Symmetry in Hartree-Fock Theory
+            </a><br/>
+            H. G. A. Burton, A. J. W. Thom, and P.-F. Loos, <i>J. Chem. Theory Comput.</i> <b>15</b>, 4374, (2019)</br>
+          </li>
+          <li>
+            <a href="https://doi.org/10.1063/1.5085121">
+                Complex Adiabatic Connection: A Hidden Non-Hermitian Path from Ground to Excited States
+            </a><br/>
+            H. G. A. Burton, A. J. W. Thom, and P.-F. Loos, <i>J. Chem. Phys.</i> <b>150</b>, 041103, (2019)
+          </li>
+       </ul>
+    </p>
+
+    <!-- Energy Landscapes for Electronic Structure -->
+    <h3 style="padding-top:20px;" id="ESLandscapes">Energy Landscapes for Electronic Structure</h3>
+    <p>
+       <b>
+          Here we include a lay summary about the work...
+       </b>
+       <br>
+
+       <p style="text-align:center">
+       <img src="graphics/scf_landscape.png" style="width:auto;height:280px;padding-left:20px;padding-right:20px">
+       <img src="graphics/hubbard_dimer_land.pdf" style="width:auto;height:240px;padding-bottom:20px;padding-left:20px;padding-right:20px;">
+       </p>
+       <p>
+       <br>
+       Our current dependence on the molecular orbital and Slater determinant view of chemistry obscures our perspective on exact wave functions. For example, an exact wave function that is poorly represented by a single reference determinant is described as a “multiconfigurational” wave function, implying that it forms as a linear combination of many states. Instead, we can view the approximate wave function as a linear expansion of exact states, emphasising the idea of ‘spin’ and ‘energetic’ contaminants in the approximate solution.
+       In this Research Theme, we will revisit exact wave functions as stationary points of an energy landscape problem to gain a new perspective on electronic structure theory. Some areas of electronic structure theory have already been considered as energy landscapes for a long time. For example, the breakdown of SCF theory in the presence of strong correlation is often viewed as a stability problem,25 where the symmetry-pure ground-state becomes a higher-index saddle.26 We will extend these ideas to look at the relationship between approximate solutions and exact stationary points. This approach will provide new insights into the failure of approximate methods without relying on traditional concepts such as multi-determinant expansions or excitation amplitudes.
+       <br>
+
+
+       
+
+       <br>
+
+       <b>Learn More:</b>
+       <br>
+       <ul reversed>
+          <li>
+            <a>
+                Energy Landscapes for Electronic Structure
+            </a><br/>
+            H. G. A. Burton and D. J. Wales, <i>J. Chem. Theory Comput.</i> (Accepted)</br>
+          </li>
+       </ul>
+    </p>
+
+    <div style="clear: both;"></div>
+    <!-- Multireference Potential Energy Surfaces -->
+    <h3 style="padding-top:20px;" id="NOCI">Nonorthogonal Multireference Energy Surfaces</h3>
+    <p>
+       <b>
+          Here we include a lay summary about the work...
+       </b>
+       <br>
+       <p style="text-align:center">
+       <img src="graphics/ethene_noci.pdf" style="width:auto;height:225px;padding-left:20px;padding-right:20px;">
+       <img src="graphics/nocipt2.pdf" style="width:auto;height:225px;padding-left:20px;padding-right:20px">
+       </p>
+       <p>
+
+       The ground-state of a molecule near its equilibrium structure can often be predicted with a single mean-field approximation to the electronic structure such as Hartree–Fock theory. How- ever, this mean-field approximation fails catastrophically in the presence of competing electronic configurations, for instance representing the reactant and product at a transition state. The con- ventional solution would be to use a multiconfigurational approach such as Complete Active Space Self-Consistent-Field (CASSCF), although these methods are limited by their severe computational demand. Alternatively we have found that, when many electronic configurations arise, one can find multiple solutions to the mean-field approximation that each represent a dominant configuration.1,2 In this presentation, I will outline where and why these multiple mean-field solutions emerge, and what chemical information they can provide.3 I will then demonstrate how taking a linear combina- tion of multiple mean-field states in a Nonorthogonal Configuration Interaction (NOCI) expansion can provide an efficiently alternative for computing potential energy surfaces across all molecular structures.3–6 Since our method exploits only mean-field approximations to the electronic structure, it can provide qualitatively correct energy surfaces while retaining computational efficiency. Fi- nally, I will illustrate the performance of this new approach using pedagogical chemical systems and discuss its prospects for future development and application.
+       <br>
+
+       <b>Learn More:</b><br>
+       <ul>
+          <li>
+            <a href="https://doi.org/10.1021/acs.jctc.0c00468">
+                Reaching Full Correlation through Nonorthogonal Configuration Interaction: A Second-Order Perturbative Approach
+            </a><br/>
+            H. G. A. Burton and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> <b>16</b>, 5586, (2020)
+          </li>
+          <li>
+            <a href="https://doi.org/10.1021/acs.jctc.9b00441">
+                General Approach for Multireference Ground and Excited States using Nonorthogonal Configuration Interaction
+            </a><br/>
+            H. G. A. Burton and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> <b>15</b>, 4851, (2019)
+          </li>
+       </ul>
+    </p>
+
+    <!-- Holomorphic Hartree-Fock Theory -->
+    <h3 style="padding-top:20px;" id="HoloHF">Holomorphic Hartree&ndash;Fock Theory</h3>
+    <p>
+       <b>
+          Here we include a lay summary about the work...
+       </b>
+       <br>
+       <br>
+
+       <b>Learn More:</b><br>
+       <ul>
+         <li>
+           <a href="https://doi.org/10.1021/acs.jctc.0c00822">
+               Towards a Holomorphic Density Functional Theory
+           </a><br/>
+           R. A. Zarotiadis, H. G. A. Burton, and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> (2020)
+         </li>
+         <li>
+         <a href="https://doi.org/10.1021/acs.jctc.7b00980">
+               Holomorphic Hartree-Fock Theory: The Nature of Two-Electron Problems
+           </a><br/>
+           H. G. A. Burton, M. Gross, and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> <b>14</b>, 607, (2018)
+         </li>
+         <li>
+         <a href="https://doi.org/10.1021/acs.jctc.5b01005">
+             Holomorphic Hartree-Fock Theory: An Inherently Multireference Approach
+           </a><br/>
+           H. G. A. Burton and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> <b>12</b>, 167, (2016)
+         </li>
+       </ul>
+    </p>
 
 </div>
 
