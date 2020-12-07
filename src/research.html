@@ -135,45 +135,70 @@
     </ul>
     </p>
 
-    <div style="clear: both;"></div>
     <!-- Multireference Potential Energy Surfaces -->
     <h3 style="padding-top:20px;" id="NOCI">Nonorthogonal Multireference Energy Surfaces</h3>
+    <p><b>
+    The energy of molecules near their stable structure is often quite easy to predict by assuming 
+    that electron particles move independently of each other.
+    However, when a bond is stretched or an electron is unpaired, the positions of different electrons 
+    become strongly correlated. This correlated motion can become frozen in multiple solutions to the 
+    independent particle model. We are developing new methods to predict such scenarios
+    by combining these multiple snapshots of correlated electrons.
+    </b><p>
+
+    <p style="text-align:center">
+    <img src="graphics/ethene_noci.pdf" style="width:auto;height:225px;padding-left:20px;padding-right:20px;">
+    <img src="graphics/nocipt2.png" style="width:auto;height:225px;padding-left:20px;padding-right:20px">
+    </p>
+    
     <p>
-       <b>
-          Here we include a lay summary about the work...
-       </b>
-       <br>
-       <p style="text-align:center">
-       <img src="graphics/ethene_noci.pdf" style="width:auto;height:225px;padding-left:20px;padding-right:20px;">
-       <img src="graphics/nocipt2.pdf" style="width:auto;height:225px;padding-left:20px;padding-right:20px">
-       </p>
-       <p>
+    The ground-state of a molecule near its equilibrium structure can usually be predicted with a single mean-field 
+    electronic structure approximation such as Hartree&ndash;Fock theory. However, this approximation fails catastrophically
+    in the presence of competing electronic configurations, for instance with two unpaired electrons or at
+    the transition state for a reaction. We have found that, when many electronic configurations arise, 
+    there are generally multiple solutions to the mean-field approximation which represent the dominant configurations. 
+    Taking a linear 
+    combination of these multiple solutions in a Nonorthogonal Configuration Interaction (NOCI) expansion can recover
+    qualitatively accurate potential energy surfaces for all molecular structures, allowing reaction profiles to be 
+    predicted.
+    </p>
 
-       The ground-state of a molecule near its equilibrium structure can often be predicted with a single mean-field approximation to the electronic structure such as Hartree–Fock theory. How- ever, this mean-field approximation fails catastrophically in the presence of competing electronic configurations, for instance representing the reactant and product at a transition state. The con- ventional solution would be to use a multiconfigurational approach such as Complete Active Space Self-Consistent-Field (CASSCF), although these methods are limited by their severe computational demand. Alternatively we have found that, when many electronic configurations arise, one can find multiple solutions to the mean-field approximation that each represent a dominant configuration.1,2 In this presentation, I will outline where and why these multiple mean-field solutions emerge, and what chemical information they can provide.3 I will then demonstrate how taking a linear combina- tion of multiple mean-field states in a Nonorthogonal Configuration Interaction (NOCI) expansion can provide an efficiently alternative for computing potential energy surfaces across all molecular structures.3–6 Since our method exploits only mean-field approximations to the electronic structure, it can provide qualitatively correct energy surfaces while retaining computational efficiency. Fi- nally, I will illustrate the performance of this new approach using pedagogical chemical systems and discuss its prospects for future development and application.
-       <br>
+    <p>
+    We have recently developed a standardised approach to predicting molecular energy surfaces using NOCI.
+    This approach has been implemented in the new LIBNOCI library available with the 
+    <a href="https://www.q-chem.com">Q-Chem</a> software package. We have also introduced a second-order 
+    perturbative correction &ldquo;NOCI-PT2&rdquo; that provides quantitative accuracy while retaining
+    the computational efficiency and chemical intuition offered by NOCI.
+    </p>
 
-       <b>Learn More:</b><br>
-       <ul>
-          <li>
-            <a href="https://doi.org/10.1021/acs.jctc.0c00468">
-                Reaching Full Correlation through Nonorthogonal Configuration Interaction: A Second-Order Perturbative Approach
-            </a><br/>
-            H. G. A. Burton and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> <b>16</b>, 5586, (2020)
-          </li>
-          <li>
-            <a href="https://doi.org/10.1021/acs.jctc.9b00441">
-                General Approach for Multireference Ground and Excited States using Nonorthogonal Configuration Interaction
-            </a><br/>
-            H. G. A. Burton and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> <b>15</b>, 4851, (2019)
-          </li>
-       </ul>
+    <p>
+    <b>Learn More:</b><br>
+    <ul>
+       <li>
+         <a href="https://manual.q-chem.com/5.3/subsec_NOCI.html#subsec:LIBNOCI">
+             LIBNOCI library in Q-Chem
+         </a>
+       </li>
+       <li>
+         <a href="https://doi.org/10.1021/acs.jctc.0c00468">
+             Reaching Full Correlation through Nonorthogonal Configuration Interaction: A Second-Order Perturbative Approach
+         </a><br/>
+         H. G. A. Burton and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> <b>16</b>, 5586, (2020)
+       </li>
+       <li>
+         <a href="https://doi.org/10.1021/acs.jctc.9b00441">
+             General Approach for Multireference Ground and Excited States using Nonorthogonal Configuration Interaction
+         </a><br/>
+         H. G. A. Burton and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> <b>15</b>, 4851, (2019)
+       </li>
+    </ul>
     </p>
 
     <!-- Holomorphic Hartree-Fock Theory -->
     <h3 style="padding-top:20px;" id="HoloHF">Holomorphic Hartree&ndash;Fock Theory</h3>
     <p>
        <b>
-          Here we include a lay summary about the work...
+          More information coming soon...
        </b>
        <br>
        <br>
