@@ -53,11 +53,78 @@
 
     <h3>Major Themes</h3>
     <ul>
-        <a href="#ComplexQC"><li><b>Quantum Chemistry in the Complex Plane</b></li></a>
         <a href="#ESLandscapes"><li><b>Energy Landscapes for Electronic Structure</b></li></a>
+        <a href="#ComplexQC"><li><b>Quantum Chemistry in the Complex Plane</b></li></a>
         <a href="#NOCI"><li><b>Nonorthogonal Multireference Energy Surfaces</b></li></a>
         <a href="#HoloHF"><li><b>Holomorphic Hartree&ndash;Fock Theory</b></li></a>
     </ul>
+
+    <!-- Energy Landscapes for Electronic Structure -->
+    <h3 style="padding-top:20px;" id="ESLandscapes">Energy Landscapes for Electronic Structure</h3>
+    <p><b>
+           We are developing a new way to interpret molecular electronic energy levels 
+           as stationary points of an energy landscape, rather like a mountain range. The lowest-energy
+           level corresponds to the valley bottom, while higher-energy levels are represented
+           as high mountain passes and summit peaks. We can then investigate the fascinating pathways
+           that connect different stationary points.
+    </b></p>
+
+    <p style="text-align:center">
+    <img src="graphics/scf_landscape.png" style="width:auto;height:280px;padding-left:20px;padding-right:20px">
+    <img src="graphics/hubbard_dimer_land.png" style="width:auto;height:240px;padding-bottom:20px;padding-left:20px;padding-right:20px;">
+    </p>
+    
+    <p>
+    Excited electronic states in molecules have traditionally been predicted by considering the response of an approximate
+    ground state to an external field, or by solving large matrix eigenvalue problems.
+    These approaches are typically biased towards the ground-state properties, limiting the accuracy of 
+    the corresponding excited-state models. We are exploring an entirely new perspective whereby excited-state 
+    approximations exist as higher-energy stationary points of a high-dimensional electronic energy surface.
+    These higher-energy stationary points correspond to individually optimised &ldquo;state-specific&rdquo; wave functions 
+    and can provide a more accurate representation of excited-state properties.
+    By understanding the structure of this high-dimensional energy surface for different
+    electronic structure approximations, we hope to develop new automated algorithms to locate
+    state-specific representations of excited states.
+    </p>
+    
+    <p>
+    Our energy landscape perspective can also help us understand where and why simple electronic structure
+    models break down. For example, the failure of the mean-field Hartree&ndash;Fock approximation in the presence
+    of strong electron coupling corresponds to the formation of symmetry-broken local minima on the energy surface.
+    Directly comparing the simplistic model energy surface to the exact landscape can allow us to understand
+    this failure and identify new ways to improve our computational models.
+    </p>
+
+    <p>
+    <b>Learn More:</b>
+    <br>
+    <ul reversed>
+      <li> 
+        <a href="https://arxiv.org/abs/2201.01518">
+            Energy Landscape of State-Specific Electronic Structure Theory
+        </a></br>
+        H. G. A. Burton, Submitted to <i>J. Chem. Theory Comput.</i>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1063/5.0056968">
+            Variations of the Hartree&ndash;Fock fractional-spin error for one electron
+        </a></br>
+        H. G. A. Burton, C. Marut, T. J. Daas, P. Gori-Giorgi, and P.-F. Loos, <i>J. Chem. Phys.</i> <b>155</b>, 054107, (2021)
+      </li>
+      <li>
+        <a href="https://doi.org/10.1063/5.0043105">
+            Hartree&ndash;Fock Critical Nuclear Charge in Two-Electron Atoms
+        </a><br/>
+        H. G. A. Burton <i>J. Chem. Phys.</i> <b>154</b>, 111103, (2021)
+      </li>
+       <li>
+            <a href="https://doi.org/10.1021/acs.jctc.0c00772">
+                Energy Landscapes for Electronic Structure
+            </a><br/>
+            H. G. A. Burton and D. J. Wales <i>J. Chem. Theory Comput.</i> <b>17</b>, 151, (2021)
+       </li>
+    </ul>
+    </p>
 
     <!-- Quantum Chemistry in the Complex Plane -->
     <h3 style="padding-top:10px;" id="ComplexQC">Quantum Chemistry in the Complex Plane</h3>
@@ -102,12 +169,12 @@
     <b>Learn More:</b>
     <br>
     <ul reversed>
-       <li>
-         <a href="https://doi.org/10.1088/1361-648X/abe795">
-             Perturbation Theory in the Complex Plane: Exceptional Points and Where to Find Them
-         </a><br/>
-         A. Marie, H. G. A. Burton, and P.-F. Loos (In Press)
-       </li>
+      <li>
+        <a href="https://doi.org/10.1088/1361-648X/abe795">
+            Perturbation Theory in the Complex Plane: Exceptional Points and Where to Find Them
+        </a><br/>
+        A. Marie, H. G. A. Burton, and P.-F. Loos <i>J. Phys. Condes. Matter</i> <b>33</b>, 283001, (2021)</br>
+      </li>
        <li>
          <a href="https://doi.org/10.1021/acs.jctc.9b00289">
              Parity-Time Symmetry in Hartree-Fock Theory
@@ -123,60 +190,6 @@
     </ul>
     </p>
 
-    <!-- Energy Landscapes for Electronic Structure -->
-    <h3 style="padding-top:20px;" id="ESLandscapes">Energy Landscapes for Electronic Structure</h3>
-    <p><b>
-           We are developing a new way to interpret molecular electronic energy levels 
-           as stationary points of an energy landscape, rather like a mountain range. The lowest-energy
-           level corresponds to the valley bottom, while higher-energy levels are represented
-           as high mountain passes and summit peaks. We can then investigate the fascinating pathways
-           that connect different stationary points.
-    </b></p>
-
-    <p style="text-align:center">
-    <img src="graphics/scf_landscape.png" style="width:auto;height:280px;padding-left:20px;padding-right:20px">
-    <img src="graphics/hubbard_dimer_land.png" style="width:auto;height:240px;padding-bottom:20px;padding-left:20px;padding-right:20px;">
-    </p>
-    
-    <p>
-    Excited electronic states in molecules have traditionally been predicted by considering the response of an approximate
-    ground state to an external field, or by solving large matrix eigenvalue problems.
-    These approaches are typically biased towards the ground-state properties, limiting the accuracy of 
-    the corresponding excited-state models. We are exploring an entirely new perspective whereby excited-state 
-    approximations exist as higher-energy stationary points of a high-dimensional electronic energy surface.
-    These higher-energy stationary points correspond to individually optimised &ldquo;state-specific&rdquo; wave functions 
-    and can provide a more accurate representation of excited-state properties.
-    By understanding the structure of this high-dimensional energy surface for different
-    electronic structure approximations, we hope to develop new automated algorithms to locate
-    state-specific representations of excited states.
-    </p>
-    
-    <p>
-    Our energy landscape perspective can also help us understand where and why simple electronic structure
-    models break down. For example, the failure of the mean-field Hartree&ndash;Fock approximation in the presence
-    of strong electron coupling corresponds to the formation of symmetry-broken local minima on the energy surface.
-    Directly comparing the simplistic model energy surface to the exact landscape can allow us to understand
-    this failure and identify new ways to improve our computational models.
-    </p>
-
-    <p>
-    <b>Learn More:</b>
-    <br>
-    <ul reversed>
-      <li>
-        <a href="https://doi.org/10.1063/5.0043105">
-            Hartree&ndash;Fock Critical Nuclear Charge in Two-Electron Atoms
-        </a><br/>
-        H. G. A. Burton <i>J. Chem. Phys.</i> <b>154</b>, 111103, (2021)
-      </li>
-       <li>
-            <a href="https://doi.org/10.1021/acs.jctc.0c00772">
-                Energy Landscapes for Electronic Structure
-            </a><br/>
-            H. G. A. Burton and D. J. Wales <i>J. Chem. Theory Comput.</i> <b>17</b>, 151, (2021)
-       </li>
-    </ul>
-    </p>
 
     <!-- Multireference Potential Energy Surfaces -->
     <h3 style="padding-top:20px;" id="NOCI">Nonorthogonal Multireference Energy Surfaces</h3>
@@ -218,10 +231,10 @@
     <b>Learn More:</b><br>
     <ul>
       <li>
-        <a>
+        <a href="https://doi.org/10.1063/5.0045442">
             Generalised Nonorthogonal Matrix Elements: Unifying Wick's Theorem and the Slater&ndash;Condon Rules
         </a><br/>
-        H. G. A. Burton <i>(Submitted)</i>
+        H. G. A. Burton, <i>J. Chem. Phys.</i> <b>154</b>, 144109, (2021)
       </li>
        <li>
          <a href="https://manual.q-chem.com/5.3/subsec_NOCI.html#subsec:LIBNOCI">
