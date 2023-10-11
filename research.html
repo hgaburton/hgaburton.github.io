@@ -50,9 +50,9 @@
     <h3>Major Themes</h3>
     <ul>
         <a href="#ESLandscapes"><li><b>Energy Landscapes for Electronic Structure</b></li></a>
-        <a href="#QCQC"><li><b>Electronic Approximations for Quantum Computing</b></li></a>
+        <a href="#QCQC"><li><b>Unitary Product States for Quantum Computing</b></li></a>
+        <a href="#NOCI"><li><b>Nonorthogonal Configuration Interaction for Strong Correlation</b></li></a>
         <a href="#ComplexQC"><li><b>Quantum Chemistry in the Complex Plane</b></li></a>
-        <a href="#NOCI"><li><b>Nonorthogonal Multireference Energy Surfaces</b></li></a>
         <a href="#HoloHF"><li><b>Holomorphic Hartree&ndash;Fock Theory</b></li></a>
     </ul>
     
@@ -62,12 +62,12 @@
            We are developing a new way to interpret molecular electronic energy levels
            as stationary points of an energy landscape, rather like a mountain range. The lowest-energy
            level corresponds to the valley bottom, while higher-energy levels are represented
-           as high mountain passes and summit peaks. We can then investigate the fascinating pathways
-           that connect different stationary points.
+           as high mountain passes and summit peaks. These higher-energy stationary points can 
+           provide bespoke representations of electronic excited states.
     </b></p>
 
     <p style="text-align:center">
-    <img src="graphics/scf_landscape.png" style="width:auto;height:280px;padding-left:20px;padding-right:20px">
+    <img src="graphics/ss_casscf.jpeg" style="width:auto;height:280px;padding-left:20px;padding-right:20px">
     <img src="graphics/hubbard_dimer_land.png" style="width:auto;height:240px;padding-bottom:20px;padding-left:20px;padding-right:20px;">
     </p>
     
@@ -80,7 +80,7 @@
     These higher-energy stationary points correspond to individually optimised &ldquo;state-specific&rdquo; wave functions
     and can provide a more accurate representation of excited-state properties.
     By understanding the structure of this high-dimensional energy surface for different
-    electronic structure approximations, we hope to develop new automated algorithms to locate
+    electronic structure approximations, we hope to develop new computationally efficient algorithms to locate
     state-specific representations of excited states.
     </p>
     
@@ -88,19 +88,28 @@
     Our energy landscape perspective can also help us understand where and why simple electronic structure
     models break down. For example, the failure of the mean-field Hartree&ndash;Fock approximation in the presence
     of strong electron coupling corresponds to the formation of symmetry-broken local minima on the energy surface.
-    Directly comparing the simplistic model energy surface to the exact landscape can allow us to understand
-    this failure and identify new ways to improve our computational models.
+    Our work has highlighted the prevalence of symmetry breaking in both mean-field and multi-configurational
+    wave functions, showing how this phenomenon is driven by the mathematical structure of approximate models and 
+    the nature of electronic entanglement in ground and excited states.
+    In the future, our aim is to directly compare these idealised model energy surfaces to the exact landscape 
+    to understand the failures of current methods and identify new ways to improve our computational models.
     </p>
 
     <p>
     <b>Learn More:</b>
     <br>
     <ul reversed>
+      <li> 
+        <a href="https://doi.org/10.1021/acs.jpca.3c00603">
+            Excited States, Symmetry Breaking, and Unphysical Solutions in State-Specific CASSCF Theory
+        </a></br>
+        A. Marie and H. G. A. Burton, <i>J. Phys. Chem. A</i> <b>127</b>, 4538, (2023) 
+      </li>
       <li>
         <a href="https://pubs.acs.org/doi/10.1021/acs.jctc.1c01089">
             Energy Landscape of State-Specific Electronic Structure Theory
         </a></br>
-        <u>H. G. A. Burton</u>, <i>J. Chem. Theory Comput.</i> <b>18</b>, 1512, (2022)
+        H. G. A. Burton, <i>J. Chem. Theory Comput.</i> <b>18</b>, 1512, (2022)
       </li>
       <li>
         <a href="https://doi.org/10.1063/5.0056968">
@@ -124,9 +133,9 @@
     </p>
 
     <!-- Quantum Computing for Electronic Structure Theory -->
-    <h3 style="padding-top:20px;" id="QCQC">Electronic Approximations for Quantum Computing</h3>
+    <h3 style="padding-top:20px;" id="QCQC">Unitary Product States for Quantum Computing</h3>
     <p><b>
-           We are re-imagining how to model electronic wave functions for future computer technologies.
+           We are reimagining how to model electronic wave functions using future quantum technologies.
            Quantum computers promise to transform computational chemistry by representing an electronic state
            using quantum bits that behave quantum mechanically. However, new mathematical approximations are required
            to maximise our use of this emerging technology. We are tackling this frontier challenge by
@@ -134,29 +143,30 @@
     </b></p>
 
     <p style="text-align:center">
-    <img src="graphics/scf_landscape.png" style="width:auto;height:280px;padding-left:20px;padding-right:20px">
-    <img src="graphics/hubbard_dimer_land.png" style="width:auto;height:240px;padding-bottom:20px;padding-left:20px;padding-right:20px;">
+    <img src="graphics/disco-h4.png" style="width:auto;height:300px;padding-left:20px;padding-right:20px;">
     </p>
     
     <p>
-    Excited electronic states in molecules have traditionally been predicted by considering the response of an approximate
-    ground state to an external field, or by solving large matrix eigenvalue problems.
-    These approaches are typically biased towards the ground-state properties, limiting the accuracy of 
-    the corresponding excited-state models. We are exploring an entirely new perspective whereby excited-state 
-    approximations exist as higher-energy stationary points of a high-dimensional electronic energy surface.
-    These higher-energy stationary points correspond to individually optimised &ldquo;state-specific&rdquo; wave functions 
-    and can provide a more accurate representation of excited-state properties.
-    By understanding the structure of this high-dimensional energy surface for different
-    electronic structure approximations, we hope to develop new automated algorithms to locate
-    state-specific representations of excited states.
+    Quantum chemistry is expected to be one of the first areas of research to significantly benefit from quantum computers.
+    By modelling an electronic state as a superposition of quantum bits, we can overcome the exponential scaling of high accuracy
+    electronic simulations.
+    Among the most promising &ldquo;near-term&rdquo; approaches is the variational quantum eigensolver (VQE), which represents the 
+    electronic state as a parametrised quantum circuit and identifies the best approximation by minimising the energy.
+    However, since quantum computers follow different mathematics to classical computers, we must redesign our mathematical 
+    models for electronic states.
+    The challenge is figuring out how high-accuracy wave functions can be represented while preserving the physical symmetries
+    of electronic states and ensuring that the model can be efficiently implemented using a small number of quantum gates.
     </p>
     
     <p>
-    Our energy landscape perspective can also help us understand where and why simple electronic structure
-    models break down. For example, the failure of the mean-field Hartree&ndash;Fock approximation in the presence
-    of strong electron coupling corresponds to the formation of symmetry-broken local minima on the energy surface.
-    Directly comparing the simplistic model energy surface to the exact landscape can allow us to understand
-    this failure and identify new ways to improve our computational models.
+    Recent research has shown that an exact wave function can be represented using a sequence of quantum gates
+    that entangles up to two electrons at a time. 
+    However, the accuracy is highly sensitive to the ordering of quantum gates and no consensus has been 
+    reached on how to define this ordering <i>a priori</i>.
+    We have introduced a discrete global optimisation algorithm (DISCO-VQE) that identifies the best choice
+    and ordering of quantum gates, revealing that highly-accurate models can be defined with shallow quantum circuits.
+    In the future, our aim is to translate these findings into a systematic hierarchy of theoretical models
+    that are fit for purpose in the quantum age of computing. 
     </p>
 
     <p>
@@ -164,105 +174,17 @@
     <br>
     <ul reversed>
       <li> 
-        <a href="https://pubs.acs.org/doi/10.1021/acs.jctc.1c01089">
-            Energy Landscape of State-Specific Electronic Structure Theory
+        <a href="https://doi.org/10.1038/s41534-023-00744-2">
+            Exact electronic states with shallow quantum circuits from global optimisation
         </a></br>
-        <u>H. G. A. Burton</u>, <i>J. Chem. Theory Comput.</i> <b>18</b>, 1512, (2022)
+        H. G. A. Burton, D. Marti-Dafcik, D. P. Tew, and D. J. Wales, <i>npj Quantum Inf.</i> <b>9</b>, 75, (2023)
       </li>
-      <li>
-        <a href="https://doi.org/10.1063/5.0056968">
-            Variations of the Hartree&ndash;Fock fractional-spin error for one electron
-        </a></br>
-        H. G. A. Burton, C. Marut, T. J. Daas, P. Gori-Giorgi, and P.-F. Loos, <i>J. Chem. Phys.</i> <b>155</b>, 054107, (2021)
-      </li>
-      <li>
-        <a href="https://doi.org/10.1063/5.0043105">
-            Hartree&ndash;Fock Critical Nuclear Charge in Two-Electron Atoms
-        </a><br/>
-        H. G. A. Burton <i>J. Chem. Phys.</i> <b>154</b>, 111103, (2021)
-      </li>
-       <li>
-            <a href="https://doi.org/10.1021/acs.jctc.0c00772">
-                Energy Landscapes for Electronic Structure
-            </a><br/>
-            H. G. A. Burton and D. J. Wales <i>J. Chem. Theory Comput.</i> <b>17</b>, 151, (2021)
-       </li>
-    </ul>
-    </p>
-
-    <!-- Quantum Chemistry in the Complex Plane -->
-    <h3 style="padding-top:10px;" id="ComplexQC">Quantum Chemistry in the Complex Plane</h3>
-    <p><b>
-       Quantum mechanics is usually considered with mathematically real energies. 
-       This leads to the idea that electrons in a molecule
-       can only take particular &ldquo;discrete&rdquo; energy levels.
-       We explore the fascinating consequences of allowing the energy to be a complex number.
-       Under this simple mathematical extension, discrete energy levels become unified as one continuous 
-       structure to create an entirely new perspective on quantum chemistry.
-    </b></p>
-
-    <p style="text-align:center">
-    <img src="graphics/h2_riemann.png" style="width:auto;height:320px;padding-left:30px;padding-right:30px;">
-    <img src="graphics/pt_sym.png" style="width:auto;height:320px;padding-left:30px;padding-right:30px">
-    </p>
-    
-    <p>
-    Electronic energy levels in molecules are conventionally considered as real-valued and discrete, giving 
-    &ldquo;ground&rdquo; and &ldquo;excited&rdquo; states. However, if we mathematically extend our equations
-    to complex numbers &mdash; known as <i>analytic continuation</i> &mdash; we find that ground and excited states become
-    unified as one continuous energy surface: a <i>Riemann surface</i>.
-    In fact, discrete energy levels only arise by restricting our perspective to real numbers.
-    These remarkable continuous energy surfaces allow a ground-state wave function to be continuously evolved
-    into an excited-state wave function by following a well-defined pathway in the complex-plane.
-    We have discovered the first examples of such pathways within electronic structure theory and we investigating
-    how they can be used to locate state-specific representations of excited states.
-    </p>
-
-    <p>       
-    We are also interested in the fundamental properties of non-Hermitian extensions to electronic structure
-    methods and how this affects their behaviour on the real axis.
-    For example, the convergence of perturbation theory is controlled by the location of non-Hermitian degeneracies
-    in the complex plane. 
-    Furthermore, we have discovered that combined parity-time symmetry in electronic structure
-    can enforce real-valued energies, even for complex non-Hermitian wave functions.
-    We believe that understanding these fundamental properties will allow entirely new electronic structure
-    approximations to be developed.
-    </p>
-
-    <p>
-    <b>Learn More:</b>
-    <br>
-    <ul reversed>
-      <li>
-        <a href="https://doi.org/10.1063/5.0091442">
-            Complex analysis of divergent perturbation theory at finite temperature
-        </a></br>
-        Yi Sun and H. G. A. Burton, <i>J. Chem. Phys.</i> <b>156</b>, 171101, (2022)
-      </li>
-      <li>
-        <a href="https://doi.org/10.1088/1361-648X/abe795">
-            Perturbation Theory in the Complex Plane: Exceptional Points and Where to Find Them
-        </a><br/>
-        A. Marie, H. G. A. Burton, and P.-F. Loos <i>J. Phys. Condes. Matter</i> <b>33</b>, 283001, (2021)</br>
-      </li>
-       <li>
-         <a href="https://doi.org/10.1021/acs.jctc.9b00289">
-             Parity-Time Symmetry in Hartree-Fock Theory
-         </a><br/>
-         H. G. A. Burton, A. J. W. Thom, and P.-F. Loos, <i>J. Chem. Theory Comput.</i> <b>15</b>, 4374, (2019)</br>
-       </li>
-       <li>
-         <a href="https://doi.org/10.1063/1.5085121">
-             Complex Adiabatic Connection: A Hidden Non-Hermitian Path from Ground to Excited States
-         </a><br/>
-         H. G. A. Burton, A. J. W. Thom, and P.-F. Loos, <i>J. Chem. Phys.</i> <b>150</b>, 041103, (2019)
-       </li>
     </ul>
     </p>
 
 
     <!-- Multireference Potential Energy Surfaces -->
-    <h3 style="padding-top:20px;" id="NOCI">Nonorthogonal Multireference Energy Surfaces</h3>
+    <h3 style="padding-top:20px;" id="NOCI">Nonorthogonal Configuration Interaction for Strong Correlation</h3>
     <p><b>
     The energy of molecules near their stable structure is often quite easy to predict by assuming 
     that electron particles move independently of each other.
@@ -273,8 +195,8 @@
     </b><p>
 
     <p style="text-align:center">
-    <img src="graphics/ethene_noci.png" style="width:auto;height:250px;padding-left:20px;padding-right:20px;">
-    <img src="graphics/nocipt2.png" style="width:auto;height:240px;padding-left:20px;padding-bottom:5px;padding-right:20px">
+    <img src="graphics/gnme.jpeg" style="width:auto;height:340px;padding-left:20px;padding-right:20px;">
+    <img src="graphics/nocipt2.png" style="width:auto;height:280px;padding-left:20px;padding-bottom:70px;padding-right:20px">
     </p>
     
     <p>
@@ -298,18 +220,37 @@
     </p>
 
     <p>
+    Until now, the future development of nonorthogonal electronic structure theory has been hindered 
+    by the complexity of computing nonorthogonal matrix elements between electronic configurations 
+    constructed for different sets of orbitals.
+    We have overcome this challenge by deriving a generalised nonorthogonal extension to Wick's theorem, 
+    allowing nonorthogonal matrix elements to be computed with the same computational scaling as their
+    orthogonal counterparts. 
+    Our approach for future extensions of nonorthogonal methods to multiconfigurational wave functions
+    and correlated methods.
+    This generalised framework has been implemented in the publicly available library 
+    <a href="https://github.com/hgaburton/libgnme">LibGNME</a>, providing a community resource for 
+    future method development.
+    </p>
+
+    <p>
     <b>Learn More:</b><br>
     <ul>
+       <li>
+         <a href="https://github.com/hgaburton/libgnme">
+             LibGNME: A C++ library for evaluating non-orthogonal matrix elements in electronic structure
+         </a>
+       </li>
       <li>
-        <a href="https://arxiv.org/abs/2208.10208">
-            Generalised nonorthogonal matrix elements for arbitrary excitations
+        <a href="https://doi.org/10.1063/5.0122094">
+            Generalized Nonorthogonal Matrix Elements. II: Extension to arbitrary excitations
         </a><br/>
-        H. G. A. Burton, <i>(Submitted)</i>
+        H. G. A. Burton, <i>J. Chem. Phys.</i> <b>157</b>, 204109, (2023)
       </li>
       
       <li>
         <a href="https://doi.org/10.1063/5.0045442">
-            Generalised Nonorthogonal Matrix Elements: Unifying Wick's Theorem and the Slater&ndash;Condon Rules
+            Generalized Nonorthogonal Matrix Elements: Unifying Wick's Theorem and the Slater&ndash;Condon Rules
         </a><br/>
         H. G. A. Burton, <i>J. Chem. Phys.</i> <b>154</b>, 144109, (2021)
       </li>
@@ -329,6 +270,86 @@
              General Approach for Multireference Ground and Excited States using Nonorthogonal Configuration Interaction
          </a><br/>
          H. G. A. Burton and A. J. W. Thom, <i>J. Chem. Theory Comput.</i> <b>15</b>, 4851, (2019)
+       </li>
+    </ul>
+    </p>
+
+    <!-- Quantum Chemistry in the Complex Plane -->
+    <h3 style="padding-top:10px;" id="ComplexQC">Quantum Chemistry in the Complex Plane</h3>
+    <p><b>
+       Quantum mechanics is usually considered with mathematically real energies. 
+       This leads to the idea that electrons in a molecule
+       can only take particular &ldquo;discrete&rdquo; energy levels.
+       We explore the fascinating consequences of allowing the energy to be a complex number.
+       Under this simple mathematical extension, discrete energy levels become unified as one continuous 
+       structure to create an entirely new perspective on quantum chemistry.
+    </b></p>
+
+    <p style="text-align:center">
+    <!-- <img src="graphics/h2_riemann.png" style="width:auto;height:320px;padding-left:30px;padding-right:30px;">
+    <img src="graphics/pt_sym.png" style="width:auto;height:320px;padding-left:30px;padding-right:30px"> --!>
+    <img src="graphics/ft-pt.jpeg" style="width:auto;height:220px;padding-left:30px;padding-right:30px;">
+    </p>
+    
+    <p>
+    Electronic energy levels in molecules are conventionally considered as real-valued and discrete, giving 
+    &ldquo;ground&rdquo; and &ldquo;excited&rdquo; states. However, if we mathematically extend our equations
+    to complex numbers &mdash; known as <i>analytic continuation</i> &mdash; we find that ground and excited states become
+    unified as one continuous energy surface: a <i>Riemann surface</i>.
+    In fact, discrete energy levels only arise by restricting our perspective to real numbers.
+    These remarkable continuous energy surfaces allow a ground-state wave function to be continuously evolved
+    into an excited-state wave function by following a well-defined pathway in the complex-plane.
+    We have discovered the first examples of such pathways within electronic structure theory and we investigating
+    how they can be used to locate state-specific representations of excited states.
+    </p>
+
+    <p>       
+    We are also interested in the fundamental properties of non-Hermitian extensions to electronic structure
+    methods and how this affects their behaviour on the real axis.
+    For example, the convergence of perturbation theory is controlled by the location of non-Hermitian degeneracies
+    in the complex plane. 
+    We have shown how the position of these degeneracies varies for weak or strong electron correlation at 
+    both zero- and finite-temperature perturbation theory, and how this complex mathematical structure is related 
+    to thermodynamic quantum phase transitions.
+    Furthermore, we have discovered that combined parity-time symmetry in electronic structure
+    can enforce real-valued energies, even for complex non-Hermitian wave functions.
+    We believe that understanding these fundamental properties will allow entirely new electronic structure
+    approximations to be developed.
+    </p>
+
+    <p>
+    <b>Learn More:</b>
+    <br>
+    <ul reversed>
+      <li> 
+        <a href="https://doi.org/10.48550/arXiv.2301.10539">
+            Convergence of M&oslash;ller&ndash;Plesset perturbation theory for excited reference states
+        </a></br>
+        D.-G. Oprea and H. G. A. Burton, <i>Adv. Quantum Chem.</i> <b>88</b>, 249, (2023)
+      </li>
+      <li>
+        <a href="https://doi.org/10.1063/5.0091442">
+            Complex analysis of divergent perturbation theory at finite temperature
+        </a></br>
+        Yi Sun and H. G. A. Burton, <i>J. Chem. Phys.</i> <b>156</b>, 171101, (2022)
+      </li>
+      <li>
+        <a href="https://doi.org/10.1088/1361-648X/abe795">
+            Perturbation Theory in the Complex Plane: Exceptional Points and Where to Find Them
+        </a><br/>
+        A. Marie, H. G. A. Burton, and P.-F. Loos <i>J. Phys. Condes. Matter</i> <b>33</b>, 283001, (2021)</br>
+      </li>
+       <li>
+         <a href="https://doi.org/10.1021/acs.jctc.9b00289">
+             Parity-Time Symmetry in Hartree-Fock Theory
+         </a><br/>
+         H. G. A. Burton, A. J. W. Thom, and P.-F. Loos, <i>J. Chem. Theory Comput.</i> <b>15</b>, 4374, (2019)</br>
+       </li>
+       <li>
+         <a href="https://doi.org/10.1063/1.5085121">
+             Complex Adiabatic Connection: A Hidden Non-Hermitian Path from Ground to Excited States
+         </a><br/>
+         H. G. A. Burton, A. J. W. Thom, and P.-F. Loos, <i>J. Chem. Phys.</i> <b>150</b>, 041103, (2019)
        </li>
     </ul>
     </p>
